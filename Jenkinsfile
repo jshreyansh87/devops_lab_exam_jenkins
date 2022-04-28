@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'pyton -m labs.py'
+                sh 'python -m labs.py'
             }
         }
         stage('Test') {
