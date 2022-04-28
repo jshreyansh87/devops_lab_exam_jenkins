@@ -10,6 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                bat 'python main.py'
             }
         }
         stage('Deploy') {
