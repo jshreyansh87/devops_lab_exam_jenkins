@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                values_to_print=$(python labs.py)
-                echo "$values_to_print"
+                sh 'python labs.py'
             }
         }
         stage('Test') {
